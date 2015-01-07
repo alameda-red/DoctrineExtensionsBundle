@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:doctrine="http://symfony.com/schema/dic/doctrine"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services
+        http://symfony.com/schema/dic/services/services-1.0.xsd
+        http://symfony.com/schema/dic/doctrine
+        http://symfony.com/schema/dic/doctrine/doctrine-1.0.xsd">
+
+    <doctrine:config>
+        <doctrine:orm>
+            <doctrine:dql>
+                <doctrine:numeric-function name="acos">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Acos</doctrine:numeric-function>
+                <doctrine:numeric-function name="acosh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Acosh</doctrine:numeric-function>
+                <doctrine:numeric-function name="asin">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Asin</doctrine:numeric-function>
+                <doctrine:numeric-function name="asinh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Asinh</doctrine:numeric-function>
+                <doctrine:numeric-function name="atan">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Atan</doctrine:numeric-function>
+                <doctrine:numeric-function name="atan2">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Atan2</doctrine:numeric-function>
+                <doctrine:numeric-function name="atanh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Atanh</doctrine:numeric-function>
+                <doctrine:numeric-function name="cos">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Cos</doctrine:numeric-function>
+                <doctrine:numeric-function name="cosh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Cosh</doctrine:numeric-function>
+                <doctrine:numeric-function name="degrees">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Degrees</doctrine:numeric-function>
+                <doctrine:numeric-function name="pow">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Pow</doctrine:numeric-function>
+                <doctrine:numeric-function name="radians">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Radians</doctrine:numeric-function>
+                <doctrine:numeric-function name="sin">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Sin</doctrine:numeric-function>
+                <doctrine:numeric-function name="sinh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Sinh</doctrine:numeric-function>
+                <doctrine:numeric-function name="tan">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Tan</doctrine:numeric-function>
+                <doctrine:numeric-function name="tanh">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Math\Tanh</doctrine:numeric-function>
+
+                <doctrine:numeric-function name="alameda_geo_distance">Alameda\Bundle\DoctrineExtensionsBundle\DQL\Geo\Distance</doctrine:numeric-function>
+            </doctrine:dql>
+        </doctrine:orm>
+    </doctrine:config>
+</container>
